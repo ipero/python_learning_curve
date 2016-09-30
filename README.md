@@ -8,4 +8,6 @@ Each project has own folder.
 
 
 ### List of projects
-[Draw flower](https://www.google.com)
+[Draw flower](https://github.com/ipero/python_learning_curve/tree/master/drawings)
+
+[Check text for profanity words](https://github.com/ipero/python_learning_curve/tree/master/profanity_editor)
