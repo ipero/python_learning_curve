@@ -11,3 +11,5 @@ frozen = media.Movie("Frozen", "When the newly crowned Queen Elsa accidentally u
                      "https://en.wikipedia.org/wiki/Frozen_(2013_film)#/media/File:Frozen_(2013_film)_poster.jpg",
                      "https://www.youtube.com/watch?v=TbQm5doF_Uc")
 print(frozen.storyline)
+
+frozen.show_trailer()
