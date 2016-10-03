@@ -14,3 +14,6 @@ This project draws a nice flower by using Python Turtle module:
 
 [Check text for profanity words](https://github.com/ipero/python_learning_curve/tree/master/profanity_checker)
 This project checks any text for profanity words
+
+[Web Page Movies](https://github.com/ipero/python_learning_curve/tree/master/movies)
+In this project I made web page using Python and working with classes.

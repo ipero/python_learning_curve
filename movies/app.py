@@ -35,4 +35,5 @@ ice_age = media.Movie("Ice Age: Continental Drift", "Manny, Diego, and Sid embar
                       "https://www.youtube.com/watch?v=xal3sxSSZp0")
 movies= [toy_story, frozen, adidas_vs_puma, ratatouille, secret_life_of_pets, ice_age]
 
-html_template.open_movies_page(movies)
+#html_template.open_movies_page(movies)
+
