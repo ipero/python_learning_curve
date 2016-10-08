@@ -17,3 +17,8 @@ This project checks any text for profanity words
 
 [Make Movies List Web Page](https://github.com/ipero/python_learning_curve/tree/master/movies)
 In this project I made web page using Python and working with classes.
+
+
+[Make Movies List Web Page](https://github.com/ipero/python_learning_curve/tree/master/count_words)
+This program counts occurrence of each word in provided text. The function takes two parameters: text and
+number of top words to display.
