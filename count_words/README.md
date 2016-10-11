@@ -11,7 +11,9 @@ In case of a tie (equal count), order the tied words alphabetically.
 
 E.g.:
 
+``` python
 print count_words("betty bought a bit of butter but the butter was bitter",3)
+```
 Output:
 
 [('butter', 2), ('a', 1), ('betty', 1)]
