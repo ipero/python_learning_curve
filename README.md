@@ -22,3 +22,5 @@ In this project I made web page using Python and working with classes.
 [Count occurrence of words and sort them](https://github.com/ipero/python_learning_curve/tree/master/count_words)
 This program counts occurrence of each word in provided text. The function takes two parameters: text and
 number of top words to display.
+
+[Play with booleans: not, and, or](https://github.com/ipero/python_learning_curve/tree/master/booleans)
