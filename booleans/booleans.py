@@ -40,11 +40,22 @@ bool_ten = not(2*2+2 != 3*3-3) and 17 % 4 != 4*4
 print bool_ten
 
 
-# Make sure that the_flying_circus(clown,weather) returns True
-def the_flying_circus():
-    if ________:    # Start coding here!
-        # Don't forget to indent
+# is circus ofpen
+def is_circus_open(clown, weather):
+    if (clown == True and (weather == "sunny" or weather == "cloudy")):
+        print "Circus is open!!!"
+        return True
         # the code inside this block!
-    elif ________:
-        # Keep going here.
-        # You'll want to add the else statement, too!
+    elif clown == True and weather == "rainy":
+        print "Sorry, we are closed today."
+        return False
+    elif clown == False:
+        print "Sorry, we are out of clowns!"
+        return False
+    else:
+        print "Nothing matches your inputs"
+        return False
+is_circus_open(True, "sunny")
+is_circus_open(True, "cloudy")
+is_circus_open(True, "rainy")
+is_circus_open(False, "sunny")
