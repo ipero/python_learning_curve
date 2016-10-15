@@ -25,6 +25,15 @@ from math import sqrt
 print sqrt(25)
 
 # --- 3 --- universal import (imports all variables and functions)
-# eliminates need for dot notation (math.sqrt() => sqrt())
+#  !!! This practice is dangeres!!!
+# it can over write variables and functions with same name.
 from math import *
-print fabs(-50) # prints absolute value 50.0
+print fabs(-50) # prints float absolute value 50.0
+
+# --- 4 --- Python has many built in funcitons, for example type
+# type() returns the type of variable
+print type(432) # prints <type 'int'>
+print type(5.5) # prints <type 'float'>
+print type("Hello") # prints <type 'str'>
+arr = (2, 4, 56)
+print type(arr) # prints <type 'list'>
