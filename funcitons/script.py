@@ -37,3 +37,11 @@ print type(5.5) # prints <type 'float'>
 print type("Hello") # prints <type 'str'>
 arr = (2, 4, 56)
 print type(arr) # prints <type 'list'>
+
+# function find distance from zero
+def distance_from_zero(arg):
+    if type(arg) == int or type(arg) == float:
+        return abs(arg)
+    else:
+        return "Nope"
+print distance_from_zero("-43")
