@@ -23,3 +23,8 @@ print by_three(5)
 # --- 2 --- import particular funciton from module
 from math import sqrt
 print sqrt(25)
+
+# --- 3 --- universal import (imports all variables and functions)
+# eliminates need for dot notation (math.sqrt() => sqrt())
+from math import *
+print fabs(-50) # prints absolute value 50.0
