@@ -1,6 +1,6 @@
 # Things you can do with funcitons:
 
-# call one funcitons in athorer function
+# --- 1 --- call one funcitons in athorer function
 def first(n):
     return n + 1
 
@@ -19,3 +19,7 @@ def by_three(number):
         return False
 print by_three(9)
 print by_three(5)
+
+# --- 2 --- import particular funciton from module
+from math import sqrt
+print sqrt(25)
