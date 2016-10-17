@@ -12,3 +12,14 @@ middle = suitcase[2:4]  # Third and fourth items (index two and three)
 last   = suitcase[4:6]        # The last two items (index four and five)
 print middle
 print last
+
+
+# find index of string in a list, then add new string into list
+animals = ["aardvark", "badger", "duck", "emu", "fennec fox"]
+duck_index = animals.index("duck")   # Use index() to find "duck"
+
+# Your code here!
+animals.insert(duck_index, "cobra")
+
+
+print animals
