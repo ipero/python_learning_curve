@@ -17,9 +17,15 @@ print last
 # find index of string in a list, then add new string into list
 animals = ["aardvark", "badger", "duck", "emu", "fennec fox"]
 duck_index = animals.index("duck")   # Use index() to find "duck"
-
-# Your code here!
 animals.insert(duck_index, "cobra")
-
-
 print animals
+
+# for in Python is different from JavaScript
+start_list = [5, 3, 1, 2, 4]
+square_list = []
+
+for number in start_list: # number gets assigned value of each list item
+    square_list.append(number**2)
+
+square_list.sort()
+print square_list
