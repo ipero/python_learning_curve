@@ -143,3 +143,27 @@ print n
 print range(4) # prints [0, 1, 2, 3]
 print range(5, 10) # prints [5, 6, 7, 8, 9, 10]
 print range(0,20, 2) # [0, 2, 4, 6, 8, 10, 12, 14, 16, 18]
+
+#-------------------------------------------------------------------------------
+# difference between "for item in list" and "for i in range(len(list))"
+n = [3, 5, 7]
+# Method 1 is useful to loop through the list, but it's not possible to modify
+# the list this way. Method 2 uses indexes to loop through the list, making it
+#possible to also modify the list if needed.
+
+# Method 1
+def double_method_1(n):
+    for item in n:
+        item = item * 2
+    return n
+print double_method_1(n) # prints: [3, 5, 7] As you can see the list is same
+
+# Method 2
+def double_method_2(n):
+    for i in range(0, len(n)):
+        n[i] *= 2
+    return n
+double_method_2(n)
+print n # prints: [6, 10, 14] It shows the list did change.
+
+# The above two methods show when to use "for item in list" and when "for i in range"
