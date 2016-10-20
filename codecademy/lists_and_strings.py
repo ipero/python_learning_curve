@@ -133,3 +133,13 @@ print n
 n = [ 3, 0, 6, 9, 14, 8, 20]
 del(n[6])
 print n
+
+#-------------------------------------------------------------------------------
+
+#The range function has three different versions:
+# range(stop)
+# range(start, stop)
+# range(start, stop, step)
+print range(4) # prints [0, 1, 2, 3]
+print range(5, 10) # prints [5, 6, 7, 8, 9, 10]
+print range(0,20, 2) # [0, 2, 4, 6, 8, 10, 12, 14, 16, 18]
