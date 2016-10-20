@@ -116,3 +116,20 @@ print "A class average score is %s percent" % (class_average)
 print "A class average grade is %s " % get_letter_grade(class_average)
 
 #-------------------------------------------------------------------------------
+
+# difference between .pop(), .remove() and del()
+#n.pop(index) will remove the item at index from the list and return it to you
+n = [ 3, 0, 6, 9, 14, 8, 20]
+x = n.pop(4)
+print x
+print n
+
+#n.remove(item) will remove the actual item if it finds it:
+n = [ 3, 0, 6, 9, 14, 8, 20]
+n.remove(6) # 4emoves 6 from the list, NOT the item at index 6
+print n
+
+#del(n[1]) is like .pop in that it will remove the item at the given index, but it won't return it:
+n = [ 3, 0, 6, 9, 14, 8, 20]
+del(n[6])
+print n
