@@ -1,4 +1,3 @@
-
 # Something completely different about Python is the while/else construction.
 # while/else is similar to if/else, but there is a difference: the else block
 # will execute anytime the loop condition is evaluated to False. This means
