@@ -22,3 +22,27 @@ print factorial(4)
 
 # find if number is prime number (can be divided even by itself of 1)
 # 2, 3, 5, 7 and 11 are prime numbers
+def is_prime(num):
+    result = True
+    if num > 1:
+        for n in range(2, num):
+            print n
+            if num % n == 0:
+                result = False
+                break
+    else:
+        result = False
+    return result
+print is_prime(2)
+
+# function that returns reversed string without using reversed or [:: -1]
+def reverse(text):
+    reverse = ""
+    letters = list(text)
+    for i in range(len(letters)-1, -1, -1):
+
+        reverse += letters[i]
+
+    return reverse
+
+print reverse("banana and apple")
