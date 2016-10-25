@@ -46,3 +46,22 @@ def reverse(text):
     return reverse
 
 print reverse("banana and apple")
+
+# remove vowels "a, e, i, o, u" (keep "y")
+def anti_vowel(text):
+    no_vowels = ""
+    for c in text:
+        if c == "a" or c == "A":
+            no_vowels += ""
+        elif c == "o" or c == "O":
+            no_vowels += ""
+        elif c == "e" or c == "E":
+            no_vowels += ""
+        elif c == "i" or c == "I":
+            no_vowels += ""
+        elif c == "u" or c == "U":
+            no_vowels += ""
+        else:
+            no_vowels += c
+    return no_vowels
+print anti_vowel("It is my text")
