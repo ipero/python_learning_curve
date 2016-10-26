@@ -69,7 +69,7 @@ print anti_vowel("It is my text")
 # find scrabble score
 score = {"a": 1, "c": 3, "b": 3, "e": 1, "d": 2, "g": 2,
          "f": 4, "i": 1, "h": 4, "k": 5, "j": 8, "m": 3,
-         "l": 1, "o": 1, "n": 1, "q": 10, "p": 3, "s": 1, 
+         "l": 1, "o": 1, "n": 1, "q": 10, "p": 3, "s": 1,
          "r": 1, "u": 1, "t": 1, "w": 4, "v": 4, "y": 4,
          "x": 8, "z": 10}
 
@@ -79,4 +79,26 @@ def scrabble_score(word):
     for c in word:
         total_score += score.get(c, 0)
     return total_score
-print scrabble_score("Helix ")
+print scrabble_score("Helix ") # prints 15
+
+# remove duplicates from a list
+def remove_duplicates(numbers):
+    """This function removes duplicates from a list"""
+    filtered_list = []
+    for n in numbers:
+        if n not in filtered_list:
+            filtered_list.append(n)
+    return filtered_list
+print remove_duplicates([1, 1, 2, 2, 2, 3, 4, 5, 5, 5, 5, 5, 6, 7])
+
+# find median
+def median(numbers):
+    """ Thin function finds median in a list of numbers """
+    numbers = sorted(numbers)
+    print numbers
+    length = len(numbers)
+    if length % 2 == 0:
+        return (numbers[int(math.floor(length/2)-1)] + numbers[int(math.ceil(length/2))])/2.0
+    else:
+        return numbers[int(math.floor(length/2))]
+print median([1, 34, 1, 6, 8, 0])
