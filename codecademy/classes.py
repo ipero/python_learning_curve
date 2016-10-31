@@ -109,3 +109,17 @@ my_elec_car = ElectricCar("i3", "silver", 114, "molten salt")
 print my_elec_car.condition
 my_elec_car.drive_car()
 print my_elec_car.condition
+
+# __repr__() - returns a printable representation of the object, usually one of
+# the ways possible to create this object.
+class Point3D(object):
+    def __init__(self, x, y, z):
+        self.x = x
+        self.y = y
+        self.z = z
+    def __repr__(self):
+        return "(%d, %d, %d)" % (self.x, self.y, self.z)
+
+my_point = Point3D(1,2,3)
+
+print my_point
