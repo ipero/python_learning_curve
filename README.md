@@ -24,3 +24,5 @@ This program counts occurrence of each word in provided text. The function takes
 number of top words to display.
 
 [Play with booleans: not, and, or](https://github.com/ipero/python_learning_curve/tree/master/booleans)
+
+[Regular Expressions in Python](https://github.com/ipero/python_learning_curve/tree/master/reg_python)
