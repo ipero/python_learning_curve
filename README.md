@@ -26,3 +26,7 @@ number of top words to display.
 [Play with booleans: not, and, or](https://github.com/ipero/python_learning_curve/tree/master/booleans)
 
 [Regular Expressions in Python](https://github.com/ipero/python_learning_curve/tree/master/reg_python)
+In this folder you can find Python scripts from exercises on Treehouse using regular expressions in Python 
+
+[Codecademy folder] (https://github.com/ipero/python_learning_curve/tree/master/reg_python)
+In this folder you can find Python scripts from exercises on Codecademy.com

@@ -9,3 +9,9 @@ names_file.close()
 # search - search entire file
 print(re.match(r'Ryan', data))
 print(re.search(r'Chalkley', data))
+
+def first_number(string):
+    return re.search(r"\d", string)
+
+def numbers(count, string):
+    return re.search(r"\d"*count, string)
