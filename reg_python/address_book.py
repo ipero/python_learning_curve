@@ -10,8 +10,13 @@ names_file.close()
 print(re.match(r'Ryan', data))
 print(re.search(r'Chalkley', data))
 
-def first_number(string):
-    return re.search(r"\d", string)
+def phone_numbers(data):
+    return re.findall(r'\(?\d{3}\)?-?\s?\d{3}-\d{4}', data)
 
+# Find all phone numbers
 def numbers(count, string):
     return re.search(r"\d"*count, string)
+
+# Find all of the words in the string that are count word characters long or longer.
+def find_words(count, string):
+    return re.findall(r'\w{count}+', string)
