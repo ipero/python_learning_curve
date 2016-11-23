@@ -33,3 +33,9 @@ def find_words(count, string):
 
 def find_emails(string):
     return re.findall(r'[-\w\d+.]+@[-\w\d.]+', string)
+
+# Create a variable named good_numbers that is an re.findall() where the pattern
+# matches anything in string except the numbers 5, 6, and 7.
+string = '1234567890'
+good_numbers = re.findall(r'[^5-7]', string)
+print good_numbers # ['1', '2', '3', '4', '8', '9', '0']
