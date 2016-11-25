@@ -63,19 +63,19 @@ def secret_formula(started):
     return jelly_beans, jars, crates
 
 
-# start_point = 10000
-# secret_formula_results = secret_formula(start_point)
-# beans = secret_formula_results[0]
-# jars = secret_formula_results[1]
-# crates = secret_formula_results[2]
-#
-# print "With a starting point of: %d" % start_point
-# print "We'd have %s jeans, %s jars, and %s crates." % (beans, jars, crates)
-#
-# start_point = start_point / 10
-#
-# print "We can also do that this way:"
-# print "We'd have %s beans, %s jars, and %s crabapples." % (secret_formula(start_point))
+start_point = 10000
+secret_formula_results = secret_formula(start_point)
+beans = secret_formula_results[0]
+jars = secret_formula_results[1]
+crates = secret_formula_results[2]
+
+print "With a starting point of: %d" % start_point
+print "We'd have %s jeans, %s jars, and %s crates." % (beans, jars, crates)
+
+start_point = start_point / 10
+
+print "We can also do that this way:"
+print "We'd have %s beans, %s jars, and %s crabapples." % (secret_formula(start_point))
 
 
 sentence = "All god\tthings come to those who weight."
