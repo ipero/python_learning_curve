@@ -39,3 +39,33 @@ def find_emails(string):
 string = '1234567890'
 good_numbers = re.findall(r'[^5-7]', string)
 print good_numbers # ['1', '2', '3', '4', '8', '9', '0']
+
+
+# ([abc]) - creates a group that contains a set for the letters 'a', 'b', and 'c'.
+# This could be later accessed from the Match object as .group(1)
+#
+# (?P<name>[abc]) - creates a named group that contains a set for the letters 'a', 'b', and 'c'.
+# This could later be accessed from the Match object as .group('name').
+#
+# .groups() - method to show all of the groups on a Match object.
+#
+# re.MULTILINE or re.M - flag to make a pattern regard lines in your text
+# as the beginning or end of a string.
+#
+# ^ - specifies, in a pattern, the beginning of the string.
+#
+# $ - specifies, in a pattern, the end of the string.
+
+# ------------------------------------------------------------------------------
+# Create a variable names that is an re.match() against string. The pattern should
+# provide two groups, one for a last name match and one for a first name match.
+# The name parts are separated by a comma and a space.
+
+string = 'Perotto, Pier Giorgio'
+
+names = re.match(r'''
+    (?P<last>[\w]+),\s  
+    (?P<first>[\s\w]+)
+''', string, re.X)
+
+print names
