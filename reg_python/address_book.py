@@ -1,14 +1,14 @@
 import re
 
-names_file = open("names.txt", encoding = "utf-8")
+names_file = open("names.txt")
 data = names_file.read()
 names_file.close()
 
 # r - raw string
 # match - find match at the beginning of string
 # search - search entire file
-print(re.match(r'Ryan', data))
-print(re.search(r'Chalkley', data))
+# print(re.match(r'Ryan', data))
+# print(re.search(r'Chalkley', data))
 
 # Find all phone numbers
 def phone_numbers(data):
@@ -64,8 +64,13 @@ print good_numbers # ['1', '2', '3', '4', '8', '9', '0']
 string = 'Perotto, Pier Giorgio'
 
 names = re.match(r'''
-    (?P<last>[\w]+),\s  
+    (?P<last>[\w]+),\s
     (?P<first>[\s\w]+)
 ''', string, re.X)
 
 print names
+
+string = '''Love, Kenneth, kenneth+challenge@teamtreehouse.com, 555-555-5555, @kennethlove
+Chalkley, Andrew, andrew@teamtreehouse.co.uk, 555-555-5556, @chalkers
+McFarland, Dave, dave.mcfarland@teamtreehouse.com, 555-555-5557, @davemcfarland
+Kesten, Joy, joy@teamtreehouse.com, 555-555-5558, @joykesten'''
