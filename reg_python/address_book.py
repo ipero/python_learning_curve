@@ -70,7 +70,21 @@ names = re.match(r'''
 
 print names
 
+--------------------------------------------------------------------------------
+
+# Create a new variable named contacts that is an re.search() where the pattern
+# catches the email address and phone number from string. Name the email pattern
+# email and the phone number pattern phone.
+
 string = '''Love, Kenneth, kenneth+challenge@teamtreehouse.com, 555-555-5555, @kennethlove
 Chalkley, Andrew, andrew@teamtreehouse.co.uk, 555-555-5556, @chalkers
 McFarland, Dave, dave.mcfarland@teamtreehouse.com, 555-555-5557, @davemcfarland
 Kesten, Joy, joy@teamtreehouse.com, 555-555-5558, @joykesten'''
+
+contacts = re.search(r'''
+    (?P<email>[-\w\d.+]+@[-\w\d.]+)
+     ,\s
+     (?P<phone>\d{3}-\d{3}-\d{4})'''
+     , string, re.X | re.M)
+
+print (contacts)
