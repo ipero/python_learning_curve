@@ -68,9 +68,9 @@ names = re.match(r'''
     (?P<first>[\s\w]+)
 ''', string, re.X)
 
-print names
+print names.groups()
 
---------------------------------------------------------------------------------
+# ------------------------------------------------------------------------------
 
 # Create a new variable named contacts that is an re.search() where the pattern
 # catches the email address and phone number from string. Name the email pattern
@@ -87,4 +87,4 @@ contacts = re.search(r'''
      (?P<phone>\d{3}-\d{3}-\d{4})'''
      , string, re.X | re.M)
 
-print (contacts)
+print contacts.groups()
