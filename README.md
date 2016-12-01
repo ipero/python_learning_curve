@@ -28,8 +28,8 @@ number of top words to display.
 [Regular Expressions in Python](https://github.com/ipero/python_learning_curve/tree/master/reg_python)
 In this folder you can find Python scripts from exercises on Treehouse using regular expressions in Python
 
-[Codecademy folder](https://github.com/ipero/python_learning_curve/tree/master/reg_python)
+[Codecademy folder](https://github.com/ipero/python_learning_curve/tree/master/codecademy)
 In this folder you can find Python scripts from exercises on Codecademy.com
 
-[Python the hard way](https://github.com/ipero/python_learning_curve/tree/master/reg_python)
-In this folder you can find some Python scripts from exercises on Python the Hard Way 
+[Python the hard way](https://github.com/ipero/python_learning_curve/tree/master/python_the_hard_way)
+In this folder you can find some Python scripts from exercises on Python the Hard Way
