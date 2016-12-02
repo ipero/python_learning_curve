@@ -87,4 +87,8 @@ contacts = re.search(r'''
      (?P<phone>\d{3}-\d{3}-\d{4})'''
      , string, re.X | re.M)
 
+twitters = re.searcch(r'''
+    (?P<twitter>@[^t][\w\d]+) '''
+    , string, re.X | re.M)
+
 print contacts.groups()

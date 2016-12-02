@@ -32,4 +32,7 @@ In this folder you can find Python scripts from exercises on Treehouse using reg
 In this folder you can find Python scripts from exercises on Codecademy.com
 
 [Python the hard way](https://github.com/ipero/python_learning_curve/tree/master/python_the_hard_way)
-In this folder you can find some Python scripts from exercises on Python the Hard Way
+In this folder you can find some Python scripts from exercises on "Python the Hard Way"
+
+[Hacker Rank](https://github.com/ipero/python_learning_curve/tree/master/hackerrank)
+In this folder you can find Python scripts exercises from Hacker Rank website
