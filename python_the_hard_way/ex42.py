@@ -2,48 +2,48 @@
 class Animal(object):
     pass
 
-## ??
+## Dog is-a Animal
 class Dog(Animal):
 
     def __init__(self, name):
-        ## ??
+        ## Dog has-a name
         self.name = name
 
-## ??
+## Cat is-a Animal
 class Cat(Animal):
 
     def __init__(self, name):
-        ## ??
+        ## Cat has-a name
         self.name = name
 
-## ??
+## Person is-a object
 class Person(object):
 
     def __init__(self, name):
-        ## ??
+        ## Person has-a name
         self.name = name
 
         ## Person has-a pet of some kind
         self.pet = None
 
-## ??
+## Employee is-a Person
 class Employee(Person):
 
     def __init__(self, name, salary):
-        ## ?? hmm what is this strange magic?
+        ## Employee can be someone else, maybe Robot or inharite methods from other classes
         super(Employee, self).__init__(name)
-        ## ??
+        ## Employee has salary
         self.salary = salary
 
-## ??
+## Fish is-a object
 class Fish(object):
     pass
 
-## ??
+## Salmon is-a Fish
 class Salmon(Fish):
     pass
 
-## ??
+## Halibut is-a Fish
 class Halibut(Fish):
     pass
 
@@ -51,26 +51,26 @@ class Halibut(Fish):
 ## rover is-a Dog
 rover = Dog("Rover")
 
-## ??
-satan = Cat("Satan")
+## kat is-a Cat
+kat = Cat("Kat")
 
-## ??
+## mary is-a Person
 mary = Person("Mary")
 
-## ??
-mary.pet = satan
+## mary has pet kat
+mary.pet = kat
 
-## ??
+## frank is-a Employee
 frank = Employee("Frank", 120000)
 
-## ??
+## frank has pet rover
 frank.pet = rover
 
-## ??
+## flipper is-a instance of Fish
 flipper = Fish()
 
-## ??
+## crouse is-a instance of Salmon
 crouse = Salmon()
 
-## ??
+## harry is-a instance of Halibut
 harry = Halibut()
