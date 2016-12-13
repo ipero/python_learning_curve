@@ -38,7 +38,7 @@ def find_emails(string):
 # matches anything in string except the numbers 5, 6, and 7.
 string = '1234567890'
 good_numbers = re.findall(r'[^5-7]', string)
-print good_numbers # ['1', '2', '3', '4', '8', '9', '0']
+# print good_numbers # ['1', '2', '3', '4', '8', '9', '0']
 
 
 # ([abc]) - creates a group that contains a set for the letters 'a', 'b', and 'c'.
@@ -68,7 +68,7 @@ names = re.match(r'''
     (?P<first>[\s\w]+)
 ''', string, re.X)
 
-print names.groups()
+# print names.groups()
 
 # ------------------------------------------------------------------------------
 
@@ -87,11 +87,11 @@ contacts = re.search(r'''
      (?P<phone>\d{3}-\d{3}-\d{4})'''
      , string, re.X | re.M)
 
-twitters = re.searcch(r'''
+twitters = re.search(r'''
     (?P<twitter>@[^t][\w\d]+) '''
     , string, re.X | re.M)
 
-print contacts.groups()
+# print contacts.groups()
 
 # ------------------------------------------------------------------------------
 
@@ -102,6 +102,7 @@ Kesten, Joy: 22
 Stewart Pinchback, Pinckney Benton: 18'''
 
 players = re.search(r'''
-    (?P<last_name>[\w ]+),
-    \s(?P<first_name>[\w ]+):\s(?P<score>[\d]+)
-''', string, re.M)
+        (?P<last_name>[\w ]+),
+        \s(?P<first_name>[\w ]+):\s(?P<score>[\d]+)
+    ''', string, re.M)
+print (players)
